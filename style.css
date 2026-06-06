@@ -1,0 +1,272 @@
+:root {
+    --mocha-bg: #f5f4f0;
+    --mocha-text: #2c2a29;
+    --mocha-wood: #a67c52;
+    --matcha-subtle: #7a9461;
+    --matcha-dark: #4e6339;
+    --danger-red: #dc3545;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--mocha-bg);
+    color: var(--mocha-text);
+}
+
+.navbar {
+    background-color: #1e1e1e !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--mocha-text);
+}
+
+h2 {
+    border-left: 4px solid var(--mocha-wood);
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+.btn-mocha {
+    color: var(--matcha-subtle);
+    border: 1px solid var(--matcha-subtle);
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-mocha:hover {
+    background-color: var(--matcha-subtle);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.card-mocha {
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-mocha:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Text */
+.text-justify {
+    text-align: justify;
+}
+
+.lead {
+    line-height: 1.6;
+}
+
+/* Mochers*/
+.nav-link[href="/login"] {
+    color: var(--mocha-wood) !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Badge cart */
+#cart-badge {
+    padding: 0.25em 0.45em;
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1;
+    border: 2px solid #1e1e1e;
+}
+
+/* Menu phone */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #1e1e1e;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* ==========================================
+   NUEVAS CLASES (Reemplazo de Inline CSS)
+   ========================================== */
+
+/* Colores de Texto */
+.text-mocha {
+    color: var(--mocha-text) !important;
+}
+
+.text-mocha-wood {
+    color: var(--mocha-wood) !important;
+}
+
+.text-matcha-subtle {
+    color: var(--matcha-subtle) !important;
+}
+
+.text-matcha-dark {
+    color: var(--matcha-dark) !important;
+}
+
+.text-danger {
+    color: var(--danger-red) !important;
+}
+
+/* Bordes y Fondos */
+.border-0 {
+    border: none !important;
+}
+
+.border-bottom-light {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-mocha-main {
+    background-color: var(--mocha-bg);
+}
+
+.bg-mocha-text {
+    background-color: var(--mocha-text);
+}
+
+/* Tamaños y Layout */
+.min-w-90 {
+    min-width: 90px;
+}
+
+.max-w-100 {
+    max-width: 100px;
+}
+
+.fs-5rem {
+    font-size: 5rem;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.img-60 {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.img-40 {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Bordes redondeados */
+.rounded-12 {
+    border-radius: 12px;
+}
+
+.rounded-15 {
+    border-radius: 15px;
+}
+
+.rounded-25 {
+    border-radius: 25px;
+}
+
+/* Elementos Especiales (Perfil, Rewards, Cart) */
+.avatar-circle {
+    background-color: var(--matcha-subtle);
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+
+.tip-box {
+    border: 1px solid var(--matcha-subtle);
+    color: var(--matcha-dark);
+}
+
+.card-points {
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #eeeeee !important;
+}
+
+.border-matcha-light {
+    border: 1px solid rgba(122, 148, 97, 0.3);
+}
+
+.border-bottom-wood {
+    border-bottom: 5px solid var(--mocha-wood);
+}
+
+.border-bottom-matcha {
+    border-bottom: 5px solid var(--matcha-subtle);
+}
+
+.border-bottom-matcha-dark {
+    border-bottom: 5px solid var(--matcha-dark);
+}
+
+/* Reemplazo de lógica dinámica en JS (Rewards) */
+.level-unlocked {
+    background-color: rgba(122, 148, 97, 0.1);
+}
+
+.level-locked {
+    opacity: 0.5;
+}
+
+/* Badges de Stock (Menu/Product) */
+.badge-matcha-outline {
+    background-color: rgba(122, 148, 97, 0.1);
+    color: var(--matcha-subtle);
+    border: 1px solid var(--matcha-subtle);
+}
+
+.badge-mocha-outline {
+    background-color: rgba(122, 148, 97, 0.1);
+    color: var(--mocha-wood);
+    border: 1px solid var(--mocha-wood);
+}
+
+/* Reemplazo del onmouseover/onmouseout del botón de Completar Pedido (Admin) */
+.btn-outline-matcha {
+    border-color: var(--matcha-subtle);
+    color: var(--matcha-subtle);
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+.btn-outline-matcha:hover {
+    background-color: var(--matcha-subtle);
+    color: white;
+}
+
+/* Custom Search Bar */
+.search-input-custom {
+    border-radius: 20px 0 0 20px;
+}
+
+.search-btn-custom {
+    border-radius: 0 20px 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
